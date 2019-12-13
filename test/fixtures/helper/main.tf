@@ -25,7 +25,7 @@ locals {
   members       = [var.member1, var.member2]
 
   audit_log_config = [{
-    service          = "allServices"
+    service          = "storage.googleapis.com"
     log_type         = "DATA_READ"
     exempted_members = ["serviceAccount:${var.member1}"]
     }, {
